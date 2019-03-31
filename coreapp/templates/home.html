@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Welcome</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron"  style="background-color:lavender;">
+  <div class="container text-center">
+    <h1>Ebooks</h1>
+    <p>Click any ebook you want to read below..</p>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center" style="background-color:lavenderblush;">
+  <h3>New books are coming soon.</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p><a href= {{ url_for('ebook1') }}> The Wonderful Wizard</a></p>
+      <a href= {{ url_for('ebook1') }}> <img src={{image_url1}} class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3">
+      <p><a href= "/ebook2"> The Lost Princess</a></p>
+      <a href= "/ebook2"> <img src={{image_url2}} class="img-responsive" style="width:100%" alt="Image"></a>
+    </div>
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center" style="background-color:lavenderblush;">
+  <div class="row">
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>coming..</p>
+      <img src="http://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p>Created by Xue Wei Fan</p>
+</footer>
+{% endblock %}
